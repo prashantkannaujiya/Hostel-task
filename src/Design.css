@@ -1,0 +1,10 @@
+.view{
+    border:2px solid;
+    text-align: center;
+    border-radius: 6px;
+}
+.views{
+    border:2px red solid;
+    border-radius: 6px;
+    text-align: center;
+}
