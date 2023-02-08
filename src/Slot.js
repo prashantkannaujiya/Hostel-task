@@ -18,11 +18,13 @@ var customer={
 Record.push(customer);
 console.log(customer)
 props.z(props.s + 1);
+alert("You're booked")
+document.getElementById('form-slot').reset(); 
     }
     function fill()
     {
         return(
-<div><form style={{marginTop:'.6cm',color:'white'}} onSubmit={(e)=>{book(e)}}>
+<div><form style={{marginTop:'.6cm',color:'white'}} id='form-slot' onSubmit={(e)=>{book(e)}}>
     <label>Name</label><br/>
     <input type='text' name='book'/><br/>
     <label>Profession</label><br/>
@@ -38,7 +40,7 @@ props.z(props.s + 1);
     }
     return(
     <div id='slot'>
-<div id='slot-head'><span style={{fontSize:'45px'}}>Welcome To Hostel</span><span style={{fontSize:'20px'}}>.com</span></div>
+<div className='top-head'><span style={{fontSize:'45px'}}>Welcome To Hostel</span><span style={{fontSize:'20px'}}>.com</span></div>
 {(()=>{
 if(props.s<10)
 {

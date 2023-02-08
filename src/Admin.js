@@ -29,7 +29,7 @@ setloggedin(true);
     }
 return(
     <div>
-          <div><span style={{fontSize:'45px'}}>Welcome To Hostel</span><span style={{fontSize:'20px'}}>.com</span></div>
+          <div className='top-head'><span style={{fontSize:'45px'}}>Welcome To Hostel</span><span style={{fontSize:'20px'}}>.com</span></div>
         {(()=>{
 if(loggedin==false)
 {

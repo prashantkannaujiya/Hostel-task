@@ -2,8 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './styles.css';
 import App from './App';
-import Counter from "./Counter";
-import ToDo from "./ToDo";
+
 import reportWebVitals from './reportWebVitals';
 import {
   BrowserRouter,
@@ -13,15 +12,7 @@ import {
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<App></App>}> 
-        <Route index element={<ToDo></ToDo>} />
-        <Route path="/counter" element={<Counter></Counter>} />
-        </Route>
-       
-      </Routes>
-    </BrowserRouter>
+   <App></App>
 );
 
 // If you want to start measuring performance in your app, pass a function
